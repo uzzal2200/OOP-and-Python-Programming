@@ -1,0 +1,12 @@
+Answer: The difference between list and dictionary are:
+    List:
+        i) list is a comma separated item inside [ ] bracket.
+        ii) list may have mixed data like string, integer, tuple, dictionary, list etc.
+        iii) list is a mutable data structure
+        iv) list have index. To access list we may use index inside[], like list_name[index] = assigning_value
+        v) list support add, remove, insert any position etc operation.
+    Dictionary:
+        i) Dictionary is a pair type item.  The first item of pair is called key and second value is value
+        ii) The key of dictionary will be unique like 'name', 'age' etc.
+        iii) Dictionary has not index.  To access dictionary we can use key inside bracket[]. Example dictionary_name[key] = value
+        iv) dictionary support insert, remove etc operations.
