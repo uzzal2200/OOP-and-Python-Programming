@@ -1,0 +1,69 @@
+# inheritance is a parent class which attribute will use other sub-class
+
+#example
+
+
+# The objective of this program is to know about inheritance, Encapsulation and polymorphism
+
+
+class Product:
+    def __init__(self):
+        self.product = []
+ 
+    
+class Shop(Product):
+    def __init__(self):
+        super().__init__()
+    
+    def add_product(self, item):
+        self.product.append(item)
+    
+    def product_list(self):
+        print(self.product)
+
+    def buy_product(self, item):
+        if item in self.product:
+            print("Congrats")
+        else:
+            print("Sorry. This item is currently unavailable")
+
+
+my_shop = Shop()
+my_shop.add_product("T-Shirt")
+my_shop.add_product("Shirt")
+my_shop.add_product("Pant")
+my_shop.add_product("Panjabi")
+my_shop.add_product("Bag")
+
+
+
+my_shop.buy_product("Sar ani")
+my_shop.buy_product("T-Shirt")
+my_shop.buy_product("Pant")
+
+my_shop.product_list()
+
+
+
+
+#in this program Product is parent class. and Product class all attribute are Shop class attribute
+
+#Encapsulation
+#Encapsulation is a formula which will hide data. We can't access access hided data. But we can use them in other techniques
+#In python there are 3 types of access modifier.    They are
+    # i) public
+    # ii) private
+    # iii) protected
+
+    # i) In normal we use public data by using class
+    # ii) if a attribute of a class name will start with single under score(_) that types of attribute is protected data
+    # iii) if a attribute of a class name will start with double underscore(__) that is private data
+
+
+#Example of Encapsulation
+
+class Encapsulation:
+    def __init__(self, data, data2)
+    self__.data = data # This is a protected attribute
+    self._data2 = data2 # This is a  private attribute
+    
